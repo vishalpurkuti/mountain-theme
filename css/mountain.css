@@ -320,6 +320,29 @@ hr{
 }
 
 #packages{
-    height: 450px;
+    height: 600px;
     background-color: #262626;
+    text-align: center;
+}
+#packages h1{
+  color: white;
+  padding-top: 30px;
+  font-size:50px ;
+}
+#package1,#package2,#package3{
+  width: 25%;
+  height: 400px;
+  background-color: tomato;
+  display: inline-block;
+  margin: 50px 20px 20px 20px;
+  transition: all 0.1s linear;
+  border-radius: 4px;
+
+}
+.activePackage{
+  transform: scale(1.1);
+}
+.passivePackage{
+  transform: scale(1);
+  opacity: 0.5;
 }

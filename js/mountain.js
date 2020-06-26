@@ -12,3 +12,17 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+function onpackage(element) {
+
+    document.getElementById(element.id).classList.add('activePackage');
+    document.getElementById(element.id).classList.remove('passivePackage');
+    document.getElementById('package2').classList.add('passivePackage');
+
+}
+function offpackage(element) {
+    document.getElementById(element.id).classList.remove('activePackage');
+    document.getElementById(element.id).classList.add('passivePackage');
+    document.getElementById('package2').classList.remove('passivePackage');
+}
+
