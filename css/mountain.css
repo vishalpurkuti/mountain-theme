@@ -281,7 +281,7 @@ header{
 
 #adventure-left h1{
   font-family: 'Fredoka One', cursive;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 300;
   text-align: center;
   position: relative;
@@ -307,7 +307,7 @@ border-radius: 10px;
 #slider{
   display: flex;
   flex-wrap: wrap;
-  transition: all 10s linear;
+  transition: all 1s linear;
   animation-name: slider;
   animation-duration: 10s;
   animation-iteration-count: infinite;
