@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +32,7 @@ body{
     .col-lg-11,
     .col-lg-12 {
       float: left;
+  
       
     }
 
@@ -98,7 +101,7 @@ body{
     .col-md-11,
     .col-md-12 {
       float: left;
-      border: 1px solid green;
+     
     }
 
     .col-md-1 {
@@ -252,97 +255,215 @@ header{
     border: 3px solid whitesmoke;
     border-radius: 10px;
 }
+
 #adventure{
-    box-sizing: border-box;
-    height: 500px;
-
-    text-align: center;
+  box-sizing: border-box;
+  background-color: #eee;
 }
-#adventure h1{
-    color: #262626;
-    font-size: 60px;
-    width: 50%;
-    margin: 50px auto;
-    text-shadow: 1px 1px 5px grey; 
-    top: 0;
-    
+#adventure-container{
+  width:100%;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
 }
-i{
-    text-shadow: 2px 2px 5px grey; 
-
+.adventure-item{
+  height: 450px;
+  flex:1 1 500px;
+ 
 }
-
-.adventure{
-    height: 450px;
-    text-align: center;
-}
-@keyframes alt1{
-0%{
-    transform: translateX(-1000px);
-}
-100%{
-    transform: translateX(0px);
-}
+#adventure-left{
 
 }
-@keyframes alt2{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(-1000px);
-    }
-    
-    
-    }
-.alternate1{
-    transition: all 2s linear;
-    animation-name: alt1;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-
-    animation-direction: alternate;
-} 
-.alternate2{
-    transition: all 2s linear;
-    animation-name: alt2;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-} 
-hr{
-    border: 2px solid #262626;
-    border-radius: 0 50px 50px 0;
+#adventure-left{
+ 
 }
-.adventure_feature{
-   margin: 0 auto;
-   padding-top: 20px;
+
+
+#adventure-left h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #262626;
+  
+}
+.slide-wrap{
+  width:400px;
+  height: 400px;
+  margin: 25px auto;
+  overflow: hidden;
+  background-color:#eee;
+  box-sizing: border-box;
+  -webkit-box-shadow: 2px 5px 15px 5px #DDD5DA; 
+box-shadow: 2px 5px 15px 5px #DDD5DA;
+border-radius: 10px;
+   
+
+}
+#slider{
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 10s linear;
+  animation-name: slider;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+  animation-timing-function: ease-in;
+  box-sizing: border-box;
+ 
+  
+
+}
+.box{
+  height: 400px;
+  width: 400px;
+}
+@keyframes example {
+ from {border:4px solid red;}
+ to {border:4px solid yellow;}
+}
+@keyframes slider{
+ 0%{
+   transform: translateY(0px);
+ }
+ 
+ 100%{
+   transform: translateY(-1600px);
+ }
+}
+
+.box1{
+ background-image:url('../images/brushoverlay.png'), url('../images/bun.jpg');
+ background-size: cover;
+ background-position: center;
+}
+.box2{
+  
+  background-image:url('../images/brushoverlay.png'), url('../images/bungee.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+.box3{
+ 
+  background-image:url('../images/brushoverlay.png'), url('../images/adven.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.box4{
+
+  background-image:url('../images/brushoverlay.png'), url('../images/baloon.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.slider h1{
+  padding: 10px;
 }
 
 #packages{
-    height: 600px;
+    height: 700px;
     background-color: #262626;
     text-align: center;
+    padding: 0;
+    margin-top:50px;
+    
+
+  
 }
-#packages h1{
+#packageTitle{
+
   color: white;
   padding-top: 30px;
   font-size:50px ;
+
 }
 #package1,#package2,#package3{
-  width: 25%;
-  height: 400px;
-  background-color: tomato;
-  display: inline-block;
+  width:80%;
+  height:450px;
+  background-color: teal;
   margin: 50px 20px 20px 20px;
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
   border-radius: 4px;
+  margin: 100px auto;
+  box-shadow: 1px 1px 100px 10px black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
+#package2{
+  background: teal url('../images/gold.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#package1{
+  background: teal url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#package3{
+  background: teal url('../images/silver.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#offer{
+  display: inline-block;
+  float: right;
+ font-size: 25px;
+ text-align: center;
+ padding: 10px;
+  color:white;
+  border-radius: 0 4px 0 0;
+}
+.bronze{
+  background-color: brown;
+}
+.silver{
+  background-color: silver;
+  color: #262626 !important;
+}
+.gold{
+  background-color: goldenrod;
 }
 .activePackage{
   transform: scale(1.1);
+  
 }
 .passivePackage{
   transform: scale(1);
   opacity: 0.5;
+}
+
+.offer_header{
+  float: left;
+  padding: 10px;
+  color: white;
+  opacity: 0.8;
+}
+.offer_feature{
+  clear: both;
+  list-style: none;
+  position: absolute;
+  margin-top: 200px;
+  padding: 20px;
+  width: 100%;
+  min-height: 160x;
+  text-align: left;
+  background-color: #4747879F;
+  
+
+}
+.offer_feature li{
+  list-style: none;
+  color:white;
+  padding: 5px;
+  padding-left: 20px;
+  text-transform: uppercase;  
 }
