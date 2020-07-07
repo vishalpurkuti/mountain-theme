@@ -479,3 +479,114 @@ padding: 5px;
 padding-left: 20px;
 text-transform: uppercase;  
 }
+
+#route{
+  margin:50px auto ;
+}
+#route-title{
+  color: #262626;
+  text-align: center;
+padding: 50px;
+font-size:50px ;
+
+}
+
+.route-slider-container{
+  display: flex;
+  width: 100%;
+}
+.route-slide{
+  position: relative;
+      flex: 1;
+      height: 500px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      text-align: center;
+      -webkit-box-shadow: 0px 5px 11px 5px rgba(0,0,0,0.63); 
+box-shadow: 0px 5px 11px 5px rgba(0,0,0,0.63);
+}
+.route-slide:hover{
+  box-shadow: 0px 0px 0px 4000px rgba(27, 61, 88, 0.3) inset;
+  flex-grow: 8;
+  box-shadow: 0px 0px 0px 4000px rgba(27, 61, 88, 0.8) inset,;
+}
+
+.route-slide h1{
+  display: inline-block;
+  float: right;
+  padding: 10px;
+  background-color: #262626;
+  color: #eee;
+  font-size:1.5vw;  
+  font-family: 'Fredoka One', cursive;
+  font-weight: 300;
+}
+.route-slide h2{
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  color:#eee;
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  display: none;
+  background-color: #26262699;
+}
+.route-slide h3{
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  color:#eee;
+  font-size: 60px;
+  font-family: 'Fredoka One', cursive;
+  display: none;
+  
+}
+.route-slide button{
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  color:#262626;
+  width: 150px;
+  margin: 100px auto;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  display: none;
+  border: 4px solid #eee;
+  border-radius:6px;
+  outline: none;
+  font-weight: 600;
+}
+.route-slide button:hover{
+  background-color: #262626;
+  border: 4px solid #eee;
+  color:#eee;
+
+}
+
+
+
+.route-slide1{
+  background-color: red;
+  background: url('../images/ABC.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.route-slide2{
+  background-color:teal;
+  background: url('../images/everest.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.route-slide3{
+  background-color:tomato;
+  background: url('../images/mardi.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.route-slide4{
+  background-color:green;
+  background: url('../images/mustang.jpg');
+  background-size: cover;
+  background-position: center;
+}
