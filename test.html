@@ -7,26 +7,56 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='test.css'>
-    <script src='test.js'></script>
+    <script src='js/mountain.js'></script>
 </head>
 
 <body>
-    <div class="slide-wrap">
-        <div id="slider">
-            <div class="box box1">
 
-
+    <div id="packages">
+        <h1 id="packageTitle">OUR PACKAGES</h1>
+        <div class="row package-container">
+            <div class="package">
+                <div id="package1" class="passivePackage" onmouseover="onpackage(this)" onmouseout="offpackage(this)">
+                    <h1 class="bronze" id="offer">Bronze</h1>
+                    <h1 class="offer_header">Bronze Chill</h1>
+                    <div class="offer_feature">
+                        <ul>
+                            <li>Trekking</li>
+                            <li>15 days</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="box box2">
-
+            <div class=" package">
+                <div id="package2" class="activePackage">
+                    <h1 class="gold" id="offer">Gold</h1>
+                    <h1 class="offer_header">Golden Fun</h1>
+                    <div class="offer_feature">
+                        <ul>
+                            <li>Trekking</li>
+                            <li>Paragliding</li>
+                            <li>SKIING</li>
+                            <li>25 days</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="box box3">
-
+            <div class="package">
+                <div id="package3" class="passivePackage" onmouseover="onpackage(this)" onmouseout="offpackage(this)">
+                    <h1 class="silver" id="offer">Silver</h1>
+                    <h1 class="offer_header">Silver Cool </h1>
+                    <div class="offer_feature">
+                        <ul>
+                            <li>Trekking</li>
+                            <li>Paragliding</li>
+                            <li>20 days</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="box box4">
 
-            </div>
         </div>
+
     </div>
 </body>
 

@@ -307,12 +307,12 @@ border-radius: 10px;
 #slider{
   display: flex;
   flex-wrap: wrap;
-  transition: all 1s linear;
+  transition: all 0.01s ease-in;
   animation-name: slider;
   animation-duration: 10s;
   animation-iteration-count: infinite;
  
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
   box-sizing: border-box;
  
   
@@ -368,105 +368,114 @@ border-radius: 10px;
 
 }
 
+
+.package-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+ .package{
+   flex:1 1 350px ;
+   background-color: #262626; 
+ }
 #packages{
-    height: 700px;
-    background-color: #262626;
-    text-align: center;
-    padding: 0;
+  height: 700px;
+  background-color: #262626;
+  text-align: center;
+  padding: 0;
 
 
-  
+
 }
 #packageTitle{
 
-  color: white;
-  padding-top: 30px;
-  font-size:50px ;
+color: white;
+padding-top: 30px;
+font-size:50px ;
 
 }
 #package1,#package2,#package3{
-  width:80%;
-  height:450px;
-  background-color: teal;
-  margin: 50px 20px 20px 20px;
-  transition: all 0.2s linear;
-  border-radius: 4px;
-  margin: 100px auto;
-  box-shadow: 1px 1px 100px 10px black;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+width:80%;
+height:450px;
+background-color: teal;
+margin: 50px 20px 20px 20px;
+transition: all 0.2s linear;
+border-radius: 4px;
+margin: 100px auto;
+box-shadow: 1px 1px 100px 10px black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 
 }
 #package2{
-  background: teal url('../images/gold.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+background: teal url('../images/gold.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 #package1{
-  background: teal url('../images/banner.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+background: teal url('../images/banner.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 #package3{
-  background: teal url('../images/silver.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+background: teal url('../images/silver.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 #offer{
-  display: inline-block;
-  float: right;
- font-size: 25px;
- text-align: center;
- padding: 10px;
-  color:white;
-  border-radius: 0 4px 0 0;
+display: inline-block;
+float: right;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+color:white;
+border-radius: 0 4px 0 0;
 }
 .bronze{
-  background-color: brown;
+background-color: brown;
 }
 .silver{
-  background-color: silver;
-  color: #262626 !important;
+background-color: silver;
+color: #262626 !important;
 }
 .gold{
-  background-color: goldenrod;
+background-color: goldenrod;
 }
 .activePackage{
-  transform: scale(1.1);
-  
+transform: scale(1.1);
+
 }
 .passivePackage{
-  transform: scale(1);
-  opacity: 0.5;
+transform: scale(1);
+opacity: 0.5;
 }
 
 .offer_header{
-  float: left;
-  padding: 10px;
-  color: white;
-  opacity: 0.8;
+float: left;
+padding: 10px;
+color: white;
+opacity: 0.8;
 }
 .offer_feature{
-  clear: both;
-  list-style: none;
-  position: absolute;
-  margin-top: 200px;
-  padding: 20px;
-  width: 100%;
-  min-height: 160x;
-  text-align: left;
-  background-color: #4747879F;
-  
+clear: both;
+list-style: none;
+position: absolute;
+margin-top: 200px;
+padding: 20px;
+width: 100%;
+min-height: 160x;
+text-align: left;
+background-color: #4747879F;
+
 
 }
 .offer_feature li{
-  list-style: none;
-  color:white;
-  padding: 5px;
-  padding-left: 20px;
-  text-transform: uppercase;  
+list-style: none;
+color:white;
+padding: 5px;
+padding-left: 20px;
+text-transform: uppercase;  
 }

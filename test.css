@@ -11,72 +11,112 @@ body{
     background-color: #eee;
 }
 
- .slide-wrap{
-   width:400px;
-   height: 400px;
-   margin: 0 auto;
-   overflow: hidden;
-   background-color: yellow;
-   box-sizing: border-box;
-   background: url('images/brushoverlay.png'),url('images/banner.jpg');
-   background-size: cover;
-  background-position: center;
-
- }
- #slider{
-   display: flex;
-   flex-wrap: wrap;
-   transition: all 10s linear;
-   animation-name: slider;
-   animation-duration: 10s;
-   animation-iteration-count: infinite;
-   animation-direction:alternate-reverse;
-   animation-timing-function: ease-in;
-   box-sizing: border-box;
-  
-   
-
- }
- .box{
-   height: 400px;
-   width: 400px;
- }
- @keyframes example {
-  from {border:4px solid red;}
-  to {border:4px solid yellow;}
+.package-container{
+  display: flex;
+  flex-wrap: wrap;
 }
-@keyframes slider{
-  0%{
-    transform: translateY(0px);
-  }
-  
-  100%{
-    transform: translateY(-1600px);
-  }
+ .package{
+   flex:1 1 350px ; 
+ }
+#packages{
+  height: 700px;
+  background-color: #262626;
+  text-align: center;
+  padding: 0;
+
+
+
+}
+#packageTitle{
+
+color: white;
+padding-top: 30px;
+font-size:50px ;
+
+}
+#package1,#package2,#package3{
+width:80%;
+height:450px;
+background-color: teal;
+margin: 50px 20px 20px 20px;
+transition: all 0.2s linear;
+border-radius: 4px;
+margin: 100px auto;
+box-shadow: 1px 1px 100px 10px black;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#package2{
+background: teal url('../images/gold.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#package1{
+background: teal url('../images/banner.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#package3{
+background: teal url('../images/silver.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#offer{
+display: inline-block;
+float: right;
+font-size: 25px;
+text-align: center;
+padding: 10px;
+color:white;
+border-radius: 0 4px 0 0;
+}
+.bronze{
+background-color: brown;
+}
+.silver{
+background-color: silver;
+color: #262626 !important;
+}
+.gold{
+background-color: goldenrod;
+}
+.activePackage{
+transform: scale(1.1);
+
+}
+.passivePackage{
+transform: scale(1);
+opacity: 0.5;
 }
 
- .box1{
-  background-image:url('images/brushoverlay.png'), url('images/bun.jpg');
-  background-size: cover;
-  background-position: center;
- }
- .box2{
-   
-   background-image:url('images/brushoverlay.png'), url('images/bungee.jpg');
-   background-size: cover;
-   background-position: center;
- 
- }
- .box3{
-  
-   background-image:url('images/brushoverlay.png'), url('images/adven.jpg');
-   background-size: cover;
-   background-position: center;
- }
- .box4{
- 
-   background-image:url('images/brushoverlay.png'), url('images/baloon.jpg');
-   background-size: cover;
-   background-position: center;
- }
- 
+.offer_header{
+float: left;
+padding: 10px;
+color: white;
+opacity: 0.8;
+}
+.offer_feature{
+clear: both;
+list-style: none;
+position: absolute;
+margin-top: 200px;
+padding: 20px;
+width: 100%;
+min-height: 160x;
+text-align: left;
+background-color: #4747879F;
+
+
+}
+.offer_feature li{
+list-style: none;
+color:white;
+padding: 5px;
+padding-left: 20px;
+text-transform: uppercase;  
+}
